@@ -1,0 +1,149 @@
+/*
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+
+ <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+*/
+
+*{
+    margin: 0;
+}
+
+:root{
+
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --VDB-main: hsl(217, 54%, 11%);
+    --VDB-card: hsl(216, 50%, 16%);
+    --VDB-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    justify-content: center;
+    background-color: var(--VDB-main);
+    display: flex;
+}
+
+.tarjeta{
+    width: 250px;
+    height: 450px;
+    background-color: var(--VDB-card);
+    padding: 16px;
+    border-radius: 8px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    color: var(--White);
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.imagencentral{
+    width: 100%;
+    border-radius: 6px;
+}
+
+p{
+    font-size: 14px;
+    color: var(--Softblue);
+    padding: 10px 0px;
+    font-weight: 300;
+}
+
+.detalles{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--VDB-line);
+}
+
+.item-detalle {
+    font-size: 14px;
+    padding: 15px 0px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.cyan{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.softblue{
+    color: var(--Softblue);
+    font-weight: 300;
+}
+
+.final{
+    padding: 20px 0px;
+    color: var(--Softblue);
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar{
+    width: 10%;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.nombre{
+    color: var(--White);
+    font-weight: 400;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center;
+    
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
